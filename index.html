@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bouncing Ball</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container {
+      position: relative;
+      width: 600px;
+      height: 450px;
+      border: 5px solid #000;
+      margin-left: 300px;
+      margin-top: 50px;
+      background-color: aliceblue;
+      border-radius: 10px;
+      overflow:hidden;
+
+    }
+    h3{
+            margin-left: 500px;
+            margin-top:7px;
+    }
+    .ball {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: blue;
+      margin-top: 10px;
+      margin-left: 10px;
+      animation: moveDiagonal 4s ease infinite, moveVertical 2s ease infinite;
+    }
+    .ball h1{
+      font-size:12px;
+      text-align:center;
+      text-wrap:normal;
+      justify-content:center;
+      margin-top:45%;
+    }
+    @keyframes moveVertical {
+      0%, 100% {
+        top: 0;
+      }
+      50% {
+        top: 350px;
+      }
+    }
+    @keyframes moveDiagonal {
+      0% {
+        top: 0;
+        left: 0;
+      }
+      100% {
+        top: 350px;
+        left: 450px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="ball">
+       <h1> &copy; Shaazsk<sup>2</sup> </h1>
+    </div>
+  </div>
+  <h3>Designed by Shanawaz</h3>
+</body>
+</html>
